@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-const layout = () => {
+import { Box } from '@mui/material';
+import Footer from './footer';
+import Navbar from './navbar/navbar';
+
+const LandingLayout = () => {
 	return (
-		<div>layout</div>
+		<Box>
+			<Navbar/>
+			<Outlet/>
+			<Footer/>
+		</Box>
 	)
 }
 
-export default layout
+export default LandingLayout
