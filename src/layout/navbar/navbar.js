@@ -1,6 +1,6 @@
 import React, { useState, useLayoutEffect, useRef } from 'react';
 
-import { styled } from '@mui/material/styles';
+import { styled } from '@mui/system';
 import { AppBar,Toolbar, IconButton, Typography, Button, Menu, MenuItem, Divider, Container, Stack, Box } from '@mui/material';
 
 import { FaBars } from "react-icons/fa";
@@ -12,9 +12,10 @@ import SwipeableSideDrawer from './drawer';
 
 const logo = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687787934/logos/logo_alfszk.png"
 
-const TopAppBar = styled(AppBar)({
+const TopAppBar = styled(AppBar)(({ theme }) => ({
 	zIndex: 3,
-});
+	backgroundColor: theme.palette.primary.darker,
+}))
 
 const StyledContainer = styled(Container)({
 	width: "100%",

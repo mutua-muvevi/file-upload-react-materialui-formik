@@ -5,7 +5,7 @@ import { styled } from "@mui/system";
 
 import { drawerMenuItems } from "./info";
 
-const logo = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687787934/logos/logo_alfszk.png"
+const logo = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687787933/logos/logotext_zoqx8u.png"
 
 const StyledLogoListItem = styled(List)(({theme}) => ({
 
@@ -17,7 +17,7 @@ const LogoParent = styled(ListItem)(({theme}) => ({
 }));
 
 const LogoItem = styled("img")(({theme}) => ({
-	// width: "60vw",
+	width: "60vw",
 	display: "flex",
 	flexDirection: "column",
 	alignItems: "start",
